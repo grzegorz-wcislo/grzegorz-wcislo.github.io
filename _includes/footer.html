@@ -1,5 +1,16 @@
-<footer>
-  <p>
-    Copyright (c) Grzegorz Wcisło 2018
-  </p>
+<footer class="main-footer">
+  <section class="social">
+    <h2>Get in touch!</h2>
+    <ul>
+      {% for social_item in site.data.social %}
+      <li>
+        <a href="{{ social_item.link }}" target="_blank">
+          {{ social_item.name }}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <p class="copyright">Copyright (c) {{ site.my_name }} 2018</p>
 </footer>
