@@ -1,0 +1,39 @@
+@import "variables";
+
+.main-nav {
+    overflow: hidden;
+    font-size: 1.5em;
+    background-color: $primary-color;
+    font-family: $serif;
+    padding: 0 0.5em;
+
+    ul {
+        text-align: right;
+        display: inline-block;
+        float: right;
+    }
+
+    .nav-name {
+        color: white;
+    }
+
+    .nav-name, li {
+       display: inline-block;
+       padding: 0.25em;
+       margin: 0.5em 0.25em;
+    }
+
+    a {
+        text-decoration: none;
+        color: $transparent-white;
+    }
+
+    .current {
+      border-bottom: 0.1em solid $transparent-white;
+    }
+
+    li a:hover {
+        color: white;
+        border-bottom: 0.1em solid white;
+    }
+}

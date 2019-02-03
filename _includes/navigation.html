@@ -1,11 +1,15 @@
 <nav class="main-nav">
+  <a href="{{ site.url }}" class="nav-name">
+    {{ site.my_name }}
+  </a>
   <ul>
-    {% for nav_item in site.data.navigation %}
+    {%- for nav_item in site.data.navigation -%}
     <li>
-      <a href="{{ nav_item.link }}" {% if page.url == nav_item.link %} class="current" {% endif %}>
+      <a href="{{ nav_item.link }}"
+         {%- if page.url == nav_item.link -%} class="current" {%- endif -%}>
         {{ nav_item.name }}
       </a>
     </li>
-    {% endfor %}
+    {%- endfor -%}
   </ul>
 </nav>

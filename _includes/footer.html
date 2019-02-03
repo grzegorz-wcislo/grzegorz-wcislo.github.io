@@ -2,15 +2,20 @@
   <section class="social">
     <h2>Get in touch!</h2>
     <ul>
-      {% for social_item in site.data.social %}
+      {%- for social_item in site.data.social -%}
+      {%- assign icon = social_item.name | downcase | append: ".html" -%}
+      {%- assign icon_url = "social/" | append: icon -%}
       <li>
         <a href="{{ social_item.link }}" target="_blank">
+          {% include {{icon_url}} %}
           {{ social_item.name }}
         </a>
       </li>
-      {% endfor %}
+      {%- endfor -%}
     </ul>
   </section>
 
-  <p class="copyright">Copyright (c) {{ site.my_name }} 2018</p>
+  <p class="copyright">
+    Copyright (c) {{ site.my_name }} {{ site.time | date: "%Y" }}
+  </p>
 </footer>

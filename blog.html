@@ -1,15 +1,19 @@
 ---
 layout: default
-title: Blog
+title: Grzegorz Wcisło's Blog
 ---
-<section class="blog-posts">
-  <h1>Latest posts</h1>
-  {% for post in site.posts %}
-  <article>
-    <header>
-      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-    </header>
-   {{ post.excerpt }}
-  </article>
-  {% endfor %}
-</section>
+<main class="blog">
+  <section class="posts">
+    <h1>Latest posts</h1>
+    {%- for post in site.posts -%}
+    <article>
+        <header>
+        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        <time datetime="{{ post.date | date_to_xmlschema }}">
+        {{ post.date | date_to_string }}
+        </header>
+    {{ post.excerpt }}
+    </article>
+    {%- endfor -%}
+  </section>
+</main>
