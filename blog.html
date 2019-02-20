@@ -9,10 +9,13 @@ title: Grzegorz Wcisło's Blog
     <article>
         <header>
         <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-        <time datetime="{{ post.date | date_to_xmlschema }}">
-        {{ post.date | date_to_string }}
         </header>
-    {{ post.excerpt }}
+
+      {{ post.excerpt }}
+
+      <time datetime="{{ post.date | date_to_xmlschema }}">
+        {{ post.date | date_to_string }}
+      </time>
     </article>
     {%- endfor -%}
   </section>

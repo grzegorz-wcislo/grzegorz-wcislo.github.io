@@ -10,20 +10,29 @@
     padding: 0 1em 3em 1em;
     color: white;
 
+    > * {
+        width: 90%;
+        margin: auto;
+    }
+
     img {
         display: inline-block;
-        width: 100%;
+        width: 80%;
         max-width: 20em;
         border: 5px solid white;
         border-radius: 50%;
+        margin-top: 0.5em;
+    }
+
+    h1 {
+        margin: 0.5em auto;
+    }
+
+    h2 {
+        margin-bottom: 2em;
     }
 
     p {
         max-width: 40em;
-        margin: auto;
-    }
-
-    > * {
-        margin: 1em 0;
     }
 }

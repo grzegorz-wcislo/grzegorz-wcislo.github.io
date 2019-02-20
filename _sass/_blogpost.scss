@@ -1,0 +1,48 @@
+@import "variables";
+
+.post {
+    a {
+        text-decoration: none;
+        color: $primary-color;
+
+        &:hover {
+            color: darken($primary-color, 10%);
+        }
+    }
+
+
+    article {
+        max-width: 45em;
+        width: 90%;
+        margin: auto;
+        margin-bottom: 3em;
+
+        > * {
+            margin-top: 1em;
+        }
+
+        h1 {
+            margin-top: 1em;
+            margin-bottom: 0.5em;
+        }
+
+        time {
+            color: gray;
+        }
+
+        header {
+            margin-bottom: 4em;
+            text-align: center;
+        }
+
+        p {
+            margin-top: 1em;
+            margin-bottom: 1em;
+        }
+
+        div.highlight {
+            padding: 1em;
+            overflow: auto;
+        }
+    }
+}

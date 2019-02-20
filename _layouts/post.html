@@ -2,16 +2,14 @@
 layout: default
 ---
 <main class="post">
-  <section>
-    <article>
-      <header>
-        <h1>{{ page.title }}</h1>
-        <time datetime="{{ page.date | date_to_xmlschema }}">
-            {{ page.date | date_to_string }}
-        </time>
-      </header>
+  <article>
+    <header>
+      <h1>{{ page.title }}</h1>
+      <time datetime="{{ page.date | date_to_xmlschema }}">
+          {{ page.date | date_to_string }}
+      </time>
+    </header>
 
-      {{ content }}
-    </article>
-  </section>
+    {{ content }}
+  </article>
 </main>

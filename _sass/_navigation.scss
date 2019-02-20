@@ -8,13 +8,21 @@
     padding: 0 0.5em;
 
     ul {
-        text-align: right;
+        text-align: center;
         display: inline-block;
         float: right;
     }
 
     .nav-name {
         color: white;
+        text-align: center;
+    }
+
+    @media only screen and (max-width: 499px) {
+        ul, .nav-name {
+            width: 100%;
+            margin: auto;
+        }
     }
 
     .nav-name, li {
