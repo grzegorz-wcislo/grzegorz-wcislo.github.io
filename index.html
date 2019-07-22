@@ -3,8 +3,14 @@ layout: default
 title: Hi, I'm Grzegorz Wcisło
 ---
 <main class="about">
-  <img src="{{ '/assets/images/me.jpg' | relative_url }}"
-       alt="Picture of {{ site.my_name}}">
+  <img src="{{ '/assets/images/me.jpg' | relative_url}}"
+       srcset="{{ '/assets/images/me.jpg' | relative_url}} 1x,
+           {{ '/assets/images/me@2x.jpg' | relative_url}} 2x,
+           {{ '/assets/images/me@3x.jpg' | relative_url}} 3x,
+           {{ '/assets/images/me@4x.jpg' | relative_url}} 4x"
+       alt="Portrait of Grzegorz Wcisło"
+       width="320"
+       height="320">
   <h1>{{ site.my_name }}</h1>
 
   <h2>
