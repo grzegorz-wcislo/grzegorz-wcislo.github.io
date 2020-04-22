@@ -1,3 +1,7 @@
-<header class="main-header">
+{% if page.path == "index.html" %}
+  <header class="main-header main-header--transparent">
+{% else %}
+  <header class="main-header">
+{% endif %}
   {% include navigation.html %}
 </header>

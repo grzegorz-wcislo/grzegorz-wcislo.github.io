@@ -1,0 +1,52 @@
+.about {
+    img, h1, h2, p {
+        visibility: hidden;
+        opacity: 0;
+        animation: fade-scale .5s 1;
+        animation-fill-mode: forwards;
+    }
+
+    h2 {
+        animation-delay: .25s;
+    }
+
+    p {
+        animation-delay: .5s;
+    }
+
+    img {
+        animation-delay: 0.75s;
+    }
+}
+
+.main-footer--transparent, .main-header--transparent {
+    visibility: hidden;
+    opacity: 0;
+    animation: fade 1s 1;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+@keyframes fade-scale {
+    from {
+        visibility: visible;
+        transform: scale(.9);
+        opacity: 0;
+    }
+    to {
+        visibility: visible;
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fade {
+    from {
+        visibility: visible;
+        opacity: 0;
+    }
+    to {
+        visibility: visible;
+        opacity: 1;
+    }
+}

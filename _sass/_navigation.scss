@@ -9,7 +9,6 @@
 
     ul {
         text-align: center;
-        display: inline-block;
         float: right;
     }
 
@@ -43,5 +42,11 @@
     li a:hover {
         color: white;
         border-bottom: 0.1em solid white;
+    }
+}
+
+.main-header--transparent {
+    .main-nav {
+        background-color: #00000000;
     }
 }

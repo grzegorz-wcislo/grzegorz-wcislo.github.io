@@ -10,7 +10,6 @@
         text-align: center;
 
         ul {
-            display: inline-block;
             float: center;
         }
 
@@ -29,7 +28,7 @@
                 display: inline-block;
                 position: relative;
                 width: 2em;
-                hight: 2em;
+                height: 2em;
                 bottom: -0.7em;
                 margin: auto 0.5em;
             }
@@ -50,4 +49,8 @@
         text-align: center;
         font-size: 0.7em;
     }
+}
+
+.main-footer.main-footer--transparent {
+    background-color: #00000000;
 }

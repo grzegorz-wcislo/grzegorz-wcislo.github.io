@@ -1,4 +1,8 @@
-<footer class="main-footer">
+{% if page.path == "index.html" %}
+  <footer class="main-footer main-footer--transparent">
+{% else %}
+  <footer class="main-footer">
+{% endif %}
   <section class="social">
     <h2>Get in touch!</h2>
     <ul>
